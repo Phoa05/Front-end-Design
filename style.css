@@ -1,0 +1,143 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 0.2fr 1.5fr 0.5fr;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "titulo titulo titulo"
+    "content1 content2 content3"
+    "footer footer footer";
+  font-family: Arial, Helvetica, sans-serif;
+  font: 1em;
+  color: #ffffff;
+  text-align: center;
+  background-color: #DC9990;
+}
+
+.container-titulo{
+  grid-area: titulo;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin: 2.5rem 0 2.5rem 10rem;
+  text-align: left;
+}
+
+.content1-img{
+  height: 230px;
+}
+
+.banner-img{
+  height: 400px;
+
+}
+.section-banner{
+  background-color: #DC9990;
+}
+
+
+nav {
+  background-color: #b9443a;
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  grid-area: main;
+}
+
+#content1 {
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  background-color: #b9443a;
+  border-radius:25px;
+  padding-top: 2px;
+  width: 25rem;
+  height: 100px;
+  gap: 0.1px;
+}
+
+#content2 {
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  background-color: #b9443a;
+  border-radius:25px;
+  padding-top: 2px;
+  width: 25rem;
+  height: 100px;
+  gap: 0.1px;
+}
+
+
+#content3 {
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  background-color: #b9443a;
+  border-radius:25px;
+  padding-top: 2px;
+  width: 25rem;
+  height: 300px;
+  gap: 0.1px;
+}
+
+footer {
+  background-color: #b9443a;
+  grid-area: footer;
+  height: 5rem;
+  margin-top: 3rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px;
+  margin-right: auto;
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.menu-items li {
+  margin-left: 15px;
+}
+
+.menu-items li:first-child {
+  margin-left: 0;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: #333;
+}
+.card{
+  background-color: #b9443a;
+  border-radius: 50px;
+  height: 20rem;
+  
+}
