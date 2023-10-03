@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.container {
+.cont {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
@@ -35,6 +35,9 @@
   text-align: left;
 }
 
+body{
+  background-color: #DC9990;
+}
 .content1-img{
   height: 230px;
 }
@@ -44,7 +47,7 @@
 
 }
 .section-banner{
-  background-color: #DC9990;
+  margin-bottom: 1rem;
 }
 
 
@@ -97,7 +100,7 @@ main {
 footer {
   background-color: #b9443a;
   grid-area: footer;
-  height: 5rem;
+  height: auto;
   margin-top: 3rem;
 }
 
@@ -135,9 +138,12 @@ footer {
   text-decoration: none;
   color: #333;
 }
-.card{
+.carde{
   background-color: #b9443a;
   border-radius: 50px;
   height: 20rem;
   
+}
+.hamburguer{
+  background-color: #b9443a !important;
 }
